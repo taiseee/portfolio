@@ -4,136 +4,132 @@ export default function Skils() {
   const skills = [
     {
       name: 'Python',
-      svg: '/svgs/skils/python.svg',
+      svg: 'python',
       content: '',
       product: true,
       sub: [
         {
           name: 'FastAPI',
-          svg: '/svgs/skils/fastapi.svg'
+          svg: 'https://skillicons.dev/icons?i=fastapi&theme=light'
         },
         {
           name: 'Selenium',
-          svg: '/svgs/skils/selenium.svg'
+          svg: 'https://skillicons.dev/icons?i=selenium&theme=light'
         }
       ]
     },
     {
       name: 'TypeScript',
-      svg: '/svgs/skils/typescript.svg',
+      svg: 'typescript',
       content: '',
       product: true,
       sub: [
         {
           name: 'React',
-          svg: '/svgs/skils/react.svg'
+          svg: 'https://skillicons.dev/icons?i=react&theme=light'
         },
         {
           name: 'Next.js',
-          svg: '/svgs/skils/nextjs.svg'
+          svg: 'https://skillicons.dev/icons?i=nextjs&theme=light'
         },
         {
           name: 'Node.js',
-          svg: '/svgs/skils/nodejs.svg'
-        },
-        {
-          name: 'chrome',
-          svg: '/svgs/skils/chrome.svg'
+          svg: 'https://skillicons.dev/icons?i=nodejs&theme=light'
         }
       ]
     },
     {
       name: 'Firebase',
-      svg: '/svgs/skils/firebase.svg',
+      svg: 'firebase',
       content: '',
       product: true,
       sub: []
     },
     {
       name: 'PHP',
-      svg: '/svgs/skils/php.svg',
+      svg: 'php',
       content: '',
       product: false,
       sub: [
         {
           name: 'Laravel',
-          svg: '/svgs/skils/laravel.svg'
+          svg: 'https://skillicons.dev/icons?i=laravel&theme=light'
         }
       ]
     },
     {
       name: 'Docker',
-      svg: '/svgs/skils/docker.svg',
+      svg: 'docker',
       content: '',
       product: false,
       sub: []
     },
     {
       name: 'MySQL',
-      svg: '/svgs/skils/mysql.svg',
+      svg: 'mysql',
       content: '',
       product: false,
       sub: []
     },
     {
       name: 'Git',
-      svg: '/svgs/skils/git.svg',
+      svg: 'git',
       content: '',
       product: false,
       sub: []
     },
     {
       name: 'AWS',
-      svg: '/svgs/skils/aws.svg',
+      svg: 'aws',
       content: '',
       product: false,
       sub: [
         {
           name: 'Lambda',
-          svg: '/svgs/skils/aws-lambda.svg'
+          svg: 'svgs/skills/aws-lambda.svg'
         },
         {
           name: 'CodeCommit',
-          svg: '/svgs/skils/aws-codecommit.svg'
+          svg: 'svgs/skills/aws-codecommit.svg'
         },
         {
           name: 'API Gateway',
-          svg: '/svgs/skils/aws-api-gateway.svg'
+          svg: 'svgs/skills/aws-api-gateway.svg'
         },
         {
           name: 'S3',
-          svg: '/svgs/skils/aws-s3.svg'
+          svg: 'svgs/skills/aws-s3.svg'
         },
         {
           name: 'Serverless',
-          svg: '/svgs/skils/serverless.svg'
+          svg: 'svgs/skills/serverless.svg'
         }
       ]
     },
     {
       name: 'HTML',
-      svg: '/svgs/skils/html-5.svg',
+      svg: 'html',
       content: '',
       product: false,
       sub: []
     },
     {
       name: 'CSS',
-      svg: '/svgs/skils/css-3.svg',
+      svg: 'css',
       content: '',
       product: false,
       sub: []
     },
     {
       name: 'TailwindCSS',
-      svg: '/svgs/skils/tailwindcss.svg',
+      svg: 'tailwindcss',
       content: '',
       product: false,
       sub: []
     },
     {
       name: 'Bootstrap',
-      svg: '/svgs/skils/bootstrap.svg',
+      svg: 'bootstrap',
       content: '',
       product: false,
       sub: []
@@ -142,15 +138,15 @@ export default function Skils() {
   const studyings = [
     {
       name: 'Go',
-      svg: '/svgs/studyings/go.svg',
+      svg: 'go',
     },
     {
       name: 'c',
-      svg: '/svgs/studyings/c.svg',
+      svg: 'c',
     },
     {
       name: 'c++',
-      svg: '/svgs/studyings/cpp.svg',
+      svg: 'cpp',
     }
   ]
   return (
@@ -162,8 +158,8 @@ export default function Skils() {
             <CardHeader className='pb-0 pt-0 px-4'>
               <Image
                 alt={skill.name}
-                className='rounded-none p-2'
-                src={skill.svg}
+                className='p-2'
+                src={`https://skillicons.dev/icons?i=${skill.svg}&theme=light`}
                 width={50}
               />
               <p className='font-bold text-xl'>{skill.name}</p>
@@ -172,10 +168,10 @@ export default function Skils() {
               <CardBody className='overflow-visible py-2 gap-2 grid grid-cols-6 items-center'>
                 {skill.sub.map((sub, index) => (
                   <Image
+                  className='rounded-md p-2'
                     alt={sub.name}
-                    className='rounded-none'
                     src={sub.svg}
-                    width={40}
+                    width={50}
                     key={index}
                   />
                 ))}
