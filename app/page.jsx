@@ -1,12 +1,12 @@
 'use client'
-import SkilsContainer from './components/skilscontainer'
-import ProductsContainer from './components/productcontainer'
+import Skills from './_skills/skills'
+import Products from './_product/products'
 
 export default function App() {
   return (
     <>
-      <SkilsContainer />
-      <ProductsContainer />
+      <Skills />
+      <Products />
     </>
   )
 }

@@ -2,7 +2,7 @@
 import {Divider} from "@nextui-org/react";
 import Image from "next/image";
 
-export default function ProductsContainer() {
+export default function Products() {
   return (
     <div className='px-20 pt-20'>
       <h1 className='text-4xl font-bold'>制作物</h1>

@@ -1,6 +1,6 @@
-import { Card, CardHeader, CardBody, CardFooter, Image, Button } from '@nextui-org/react'
+import { Card, CardHeader, CardBody, CardFooter, Image, Button } from '@nextui-org/react';
 
-export default function SkilsContainer() {
+export default function Skils() {
   const skills = [
     {
       name: 'Python',
@@ -19,8 +19,8 @@ export default function SkilsContainer() {
       ]
     },
     {
-      name: 'JavaScript',
-      svg: '/svgs/skils/javascript.svg',
+      name: 'TypeScript',
+      svg: '/svgs/skils/typescript.svg',
       content: '',
       product: true,
       sub: [
@@ -37,18 +37,17 @@ export default function SkilsContainer() {
           svg: '/svgs/skils/nodejs.svg'
         },
         {
-          name: 'JQuery',
-          svg: '/svgs/skils/jquery.svg'
-        },
-        {
-          name: 'Appium',
-          svg: '/svgs/skils/appium.svg'
-        },
-        {
           name: 'chrome',
           svg: '/svgs/skils/chrome.svg'
         }
       ]
+    },
+    {
+      name: 'Firebase',
+      svg: '/svgs/skils/firebase.svg',
+      content: '',
+      product: true,
+      sub: []
     },
     {
       name: 'PHP',
@@ -81,12 +80,7 @@ export default function SkilsContainer() {
       svg: '/svgs/skils/git.svg',
       content: '',
       product: false,
-      sub: [
-        {
-          name: 'GitHub',
-          svg: '/svgs/skils/github.svg'
-        }
-      ]
+      sub: []
     },
     {
       name: 'AWS',
@@ -117,13 +111,6 @@ export default function SkilsContainer() {
       ]
     },
     {
-      name: 'Cockroachdb',
-      svg: '/svgs/skils/cockroachdb.svg',
-      content: '',
-      product: false,
-      sub: []
-    },
-    {
       name: 'HTML',
       svg: '/svgs/skils/html-5.svg',
       content: '',
@@ -135,16 +122,21 @@ export default function SkilsContainer() {
       svg: '/svgs/skils/css-3.svg',
       content: '',
       product: false,
-      sub: [
-        {
-          name: 'TailwindCSS',
-          svg: '/svgs/skils/tailwindcss.svg'
-        },
-        {
-          name: 'Bootstrap',
-          svg: '/svgs/skils/bootstrap.svg'
-        }
-      ]
+      sub: []
+    },
+    {
+      name: 'TailwindCSS',
+      svg: '/svgs/skils/tailwindcss.svg',
+      content: '',
+      product: false,
+      sub: []
+    },
+    {
+      name: 'Bootstrap',
+      svg: '/svgs/skils/bootstrap.svg',
+      content: '',
+      product: false,
+      sub: []
     }
   ]
   const studyings = [
@@ -163,37 +155,39 @@ export default function SkilsContainer() {
   ]
   return (
     <div className='px-20'>
-      <h1 className='pt-20 text-4xl font-bold'>使用スキル</h1>
+      <h1 className='pt-20 text-4xl font-bold'>Skills</h1>
       <div className='pt-4 gap-4 grid grid-cols-2 sm:grid-cols-3'>
         {skills.map((skill, index) => (
           <Card className='py-4 hover:-translate-y-2 shadow-none' key={index}>
-            <CardHeader className='pb-0 pt-2 px-4 flex-col items-start'>
+            <CardHeader className='pb-0 pt-0 px-4'>
               <Image
                 alt={skill.name}
-                className='rounded-none'
+                className='rounded-none p-2'
                 src={skill.svg}
                 width={50}
               />
-              <p className='font-bold'>{skill.name}</p>
+              <p className='font-bold text-xl'>{skill.name}</p>
             </CardHeader>
-            <CardBody className='overflow-visible py-2 gap-2 grid grid-cols-6 items-center'>
-              {skill.sub.map((sub, index) => (
-                <Image
-                  alt={sub.name}
-                  className='rounded-none'
-                  src={sub.svg}
-                  width={40}
-                  key={index}
-                />
-              ))}
-            </CardBody>
-            <CardFooter>
-              {skill.product &&
+            {skill.sub.length > 0 && (
+              <CardBody className='overflow-visible py-2 gap-2 grid grid-cols-6 items-center'>
+                {skill.sub.map((sub, index) => (
+                  <Image
+                    alt={sub.name}
+                    className='rounded-none'
+                    src={sub.svg}
+                    width={40}
+                    key={index}
+                  />
+                ))}
+              </CardBody>
+            )}
+            {skill.product && (
+              <CardFooter>
                 <Button color="secondary" variant="flat">
                   制作物
                 </Button>
-              }
-            </CardFooter>
+              </CardFooter>
+            )}
           </Card>
         ))}
       </div>
