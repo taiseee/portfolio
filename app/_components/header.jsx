@@ -33,13 +33,20 @@ const Header = () => {
                 </NavbarContent>
                 <NavbarContent justify='end'>
                 <Avatar
-                    isBordered
-                    as='button'
-                    className='transition-transform'
-                    color='secondary'
+                    as={Link}
+                    href='https://zenn.dev/taisei_ishimaru'
+                    className='transition-transform p-2'
                     name='name'
                     size='md'
-                    src='/images/avatar.jpg'
+                    src='svgs/header/zenn.svg'
+                />
+                <Avatar
+                    as={Link}
+                    href='https://github.com/taiseee'
+                    className='transition-transform'
+                    name='name'
+                    size='md'
+                    src='svgs/header/github.svg'
                 />
                 </NavbarContent>
             </Navbar>

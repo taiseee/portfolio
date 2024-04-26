@@ -135,24 +135,10 @@ export default function Skils() {
       sub: []
     }
   ]
-  const studyings = [
-    {
-      name: 'Go',
-      svg: 'go',
-    },
-    {
-      name: 'c',
-      svg: 'c',
-    },
-    {
-      name: 'c++',
-      svg: 'cpp',
-    }
-  ]
   return (
     <div className='px-20'>
       <h1 className='pt-20 text-4xl font-bold'>Skills</h1>
-      <div className='pt-4 gap-4 grid grid-cols-2 sm:grid-cols-3'>
+      <div className='pt-4 gap-4 grid grid-cols-2 sm:grid-cols-4'>
         {skills.map((skill, index) => (
           <Card className='py-4 hover:-translate-y-2 shadow-none' key={index}>
             <CardHeader className='pb-0 pt-0 px-4'>
@@ -164,40 +150,12 @@ export default function Skils() {
               />
               <p className='font-bold text-xl'>{skill.name}</p>
             </CardHeader>
-            {skill.sub.length > 0 && (
-              <CardBody className='overflow-visible py-2 gap-2 grid grid-cols-6 items-center'>
-                {skill.sub.map((sub, index) => (
-                  <Image
-                  className='rounded-md p-2'
-                    alt={sub.name}
-                    src={sub.svg}
-                    width={50}
-                    key={index}
-                  />
-                ))}
-              </CardBody>
-            )}
-            {skill.product && (
-              <CardFooter>
-                <Button color="secondary" variant="flat">
-                  制作物
-                </Button>
-              </CardFooter>
-            )}
           </Card>
         ))}
       </div>
-      <h1 className='pt-4 text-xl'>勉強中・興味のあるもの</h1>
-      <div className='pt-4 gap-4 grid grid-cols-8 sm:grid-cols-12'>
-        {studyings.map((studying, index) => (
-          <Image
-            key={index}
-            alt={studying.name}
-            className='rounded-none'
-            src={studying.svg}
-            width={50}
-          />
-        ))}
+      <h1 className='pt-4 text-xl font-bold'>勉強中・興味のあるもの</h1>
+      <div className='pt-2'>
+        <Image src='https://skillicons.dev/icons?i=go,supabase&theme=light' className='rounded-none' alt='go,supabase' />
       </div>
     </div>
   )
