@@ -4,9 +4,9 @@ import Products from './_product/products'
 
 export default function App() {
   return (
-    <>
+    <div className='container mx-auto' id='top'>
       <Skills />
       <Products />
-    </>
+    </div>
   )
 }

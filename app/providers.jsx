@@ -2,6 +2,7 @@
 
 import { NextUIProvider } from '@nextui-org/react';
 import Header from './_components/header';
+import Footer from './_components/footer';
 
 export function Providers({ children }) {
 
@@ -9,5 +10,6 @@ export function Providers({ children }) {
         <NextUIProvider>
             <Header />
             {children}
+            <Footer />
         </NextUIProvider>);
 }
