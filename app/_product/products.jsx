@@ -1,9 +1,10 @@
 'use client'
-import { Divider, Image } from '@nextui-org/react'
+import { Divider, Image, Link } from '@nextui-org/react'
 
 export default function Products() {
     const products = [
         {
+            image: '/images/warikanbot-line.JPG',
             name: 'LINE Bot「割り勘会計士　愛衣」',
             state: '個人開発',
             description: `
@@ -43,24 +44,53 @@ export default function Products() {
                     ),
                 },
             ],
-            image: '/images/warikanbot-line.JPG',
+            links: [
+                {
+                    name: 'LINEアカウント',
+                    url: 'https://liff.line.me/1645278921-kWRPP32q/?accountId=671hezvm',
+                },
+            ],
         },
         {
+            image: '/images/bonsaience.png',
             name: 'BONSAIENCE',
             state: 'IPA未踏アドバンスド',
             description: `
-                ITを駆使してイノベーションを創出できる優れたアイディア・技術力をもつ人材
-                `,
-        }
+                日本の伝統文化である盆栽と最新テクノロジーを掛け合わせ、盆栽の魅力を拡張し「より多くの人が、より身近に、より盆栽を楽しむ」ための開発を九大生をはじめとしたグループで行なっています。こちらはそのグループのホームページです。
+            `,
+            skills: [
+                {
+                    name: 'nextjs',
+                },
+                {
+                    name: 'react',
+                },
+                {
+                    name: 'typescript',
+                },
+                {
+                    name: 'tailwindcss',
+                },
+                {
+                    name: 'cloudflare',
+                },
+            ],
+            links: [
+                {
+                    name: 'BONSAIENCEホームページ',
+                    url: 'https://bonsaience.jp/',
+                },
+            ],
+        },
     ]
 
     return (
         <div className='pt-20' id='products'>
             <h1 className='text-4xl font-bold'>Products</h1>
-            <Divider className='my-4' />
-            <div className='flex flex-row'>
-                {products.map((product) => (
-                    <>
+            {products.map((product) => (
+                <>
+                    <Divider className='mb-4' />
+                    <div className='flex flex-row mb-4'>
                         <div className='basis-1/3 flex justify-center items-center'>
                             <Image
                                 alt='linebot_line'
@@ -95,10 +125,29 @@ export default function Products() {
                                     </>
                                 ))}
                             </div>
+                            {product.links && (
+                                <div className='pt-4'>
+                                    <h3 className='text-lg font-semibold'>Links</h3>
+                                    <ul>
+                                        {product.links.map((link, index) => (
+                                            <li key={index}>
+                                                <Link
+                                                    href={link.url}
+                                                    isExternal
+                                                    showAnchorIcon
+                                                    className='text-gray-500'
+                                                >
+                                                    {link.name}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            )}
                         </div>
-                    </>
-                ))}
-            </div>
+                    </div>
+                </>
+            ))}
         </div>
     )
 }
