@@ -5,7 +5,6 @@ export default function Skils() {
         {
             name: 'Python',
             svg: 'python',
-            content: '',
             product: true,
             sub: [
                 {
@@ -21,7 +20,6 @@ export default function Skils() {
         {
             name: 'TypeScript',
             svg: 'typescript',
-            content: '',
             product: true,
             sub: [
                 {
@@ -41,13 +39,11 @@ export default function Skils() {
         {
             name: 'Firebase',
             svg: 'firebase',
-            content: '',
             product: true,
         },
         {
             name: 'PHP',
             svg: 'php',
-            content: '',
             product: false,
             sub: [
                 {
@@ -59,25 +55,21 @@ export default function Skils() {
         {
             name: 'Docker',
             svg: 'docker',
-            content: '',
             product: false,
         },
         {
             name: 'MySQL',
             svg: 'mysql',
-            content: '',
             product: false,
         },
         {
             name: 'Git',
             svg: 'git',
-            content: '',
             product: false,
         },
         {
             name: 'AWS',
             svg: 'aws',
-            content: '',
             product: false,
             sub: [
                 {
@@ -105,25 +97,26 @@ export default function Skils() {
         {
             name: 'HTML',
             svg: 'html',
-            content: '',
             product: false,
         },
         {
             name: 'CSS',
             svg: 'css',
-            content: '',
             product: false,
         },
         {
             name: 'TailwindCSS',
             svg: 'tailwindcss',
-            content: '',
             product: false,
         },
         {
             name: 'Bootstrap',
             svg: 'bootstrap',
-            content: '',
+            product: false,
+        },
+        {
+            name: 'Linux',
+            svg: 'linux',
             product: false,
         },
     ]
