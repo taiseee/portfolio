@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardBody, CardFooter, Image, Button, Tooltip } from '@nextui-org/react'
+import { Card, CardHeader, Image, Tooltip, Divider } from '@nextui-org/react'
 
 export default function Skils() {
     const skills = [
@@ -123,6 +123,7 @@ export default function Skils() {
     return (
         <div id='skills'>
             <h1 className='pt-20 text-4xl font-bold'>Skills</h1>
+            <Divider />
             <div className='pt-4 gap-4 grid grid-cols-2 sm:grid-cols-4'>
                 {skills.map((skill, index) => (
                     <Tooltip
