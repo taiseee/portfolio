@@ -82,6 +82,74 @@ export default function Products() {
                 },
             ],
         },
+        {
+            image: '/images/switchbot_gps.png',
+            name: 'swichbotとGPSで玄関ロック解除',
+            state: '個人開発',
+            description: `
+                switchbotを使って家の玄関を自動で開けるシステムです。
+                GPSの位置情報を取得し、自宅に近づいたらスマートフォンからswitchbotを操作して玄関を開けます。
+                iOSのショートカット、AWSのLambda、APIGatewayなどを利用しました。
+            `,
+            skills: [
+                {
+                    name: 'aws',
+                },
+                {
+                    name: 'python',
+                },
+                {
+                    name: 'Lambda',
+                    image: (
+                        <Image
+                            src='svgs/skills/aws-lambda.svg'
+                            className='rounded-lg h-12'
+                            alt='lambda'
+                        />
+                    ),
+                },
+                {
+                    name: 'APIGateway',
+                    image: (
+                        <Image
+                            src='svgs/skills/aws-api-gateway.svg'
+                            className='rounded-lg h-12'
+                            alt='APIGateway'
+                        />
+                    ),
+                },
+                {
+                    name: 'switchbot',
+                    image: (
+                        <Image
+                            src='images/skills/switchbot.png'
+                            className='rounded-lg h-12'
+                            alt='switchbot'
+                        />
+                    ),
+                },
+                {
+                    name: 'ios shortcut',
+                    image: (
+                        <Image
+                            src='images/skills/ios_shortcut.png'
+                            className='rounded-lg h-12'
+                            alt='ios shortcut'
+                        />
+                    ),
+                },
+            ],
+            links: [
+                {
+                    name: 'Zenn',
+                    url: 'https://zenn.dev/taisei_ishimaru/articles/b07a4c2f5f7c30',
+                },
+                {
+                    name: 'GitHub',
+                    url: 'https://github.com/taiseee/switchbot_operation',
+                },
+            ],
+        },
     ]
 
     return (
