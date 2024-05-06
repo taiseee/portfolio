@@ -25,7 +25,7 @@ const Header = () => {
                 <Avatar
                     as={Link}
                     href='https://zenn.dev/taisei_ishimaru'
-                    className='transition-transform p-2'
+                    className='transition-transform p-2 bg-white'
                     name='name'
                     size='md'
                     src='svgs/header/zenn.svg'
@@ -33,7 +33,7 @@ const Header = () => {
                 <Avatar
                     as={Link}
                     href='https://github.com/taiseee'
-                    className='transition-transform'
+                    className='transition-transform bg-white'
                     name='name'
                     size='md'
                     src='svgs/header/github.svg'
