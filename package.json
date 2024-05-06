@@ -13,6 +13,7 @@
   "dependencies": {
     "@nextui-org/react": "^2.0.24",
     "@svgr/webpack": "^8.1.0",
+    "@vercel/speed-insights": "^1.0.10",
     "autoprefixer": "10.4.15",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.19",
