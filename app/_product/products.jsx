@@ -54,7 +54,8 @@ export default function Products() {
         {
             image: '/images/bonsaience.png',
             name: 'BONSAIENCE',
-            state: 'IPA未踏アドバンスド',
+            // state: 'IPA未踏アドバンスド',
+            state: 'チーム開発',
             description: `
                 日本の伝統文化である盆栽と最新テクノロジーを掛け合わせ、盆栽の魅力を拡張し「より多くの人が、より身近に、より盆栽を楽しむ」ための開発を九大生をはじめとしたグループで行なっています。こちらはそのグループのホームページです。
             `,
