@@ -63,17 +63,24 @@ export default function Products() {
                     name: 'nextjs',
                 },
                 {
-                    name: 'react',
+                    name: 'express',
                 },
                 {
                     name: 'typescript',
                 },
                 {
+                    name: 'prisma',
+                },
+                {
                     name: 'tailwindcss',
                 },
                 {
-                    name: 'cloudflare',
+                    name: 'python',
                 },
+                {
+                    name: 'aws',
+                },
+
             ],
             links: [
                 {
