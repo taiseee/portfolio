@@ -1,5 +1,5 @@
 'use client'
-import { Divider, Image, Link } from '@nextui-org/react'
+import { Divider, Image, Link, image } from '@nextui-org/react'
 
 export default function Products() {
     const products = [
@@ -53,7 +53,7 @@ export default function Products() {
         },
         {
             image: '/images/bonsaience.png',
-            name: 'BONSAIENCE',
+            name: 'BONSAIENCE ~盆栽のデジタルツイン化と樹形美の科学~',
             state: 'IPA未踏アドバンスト',
             description: `
                 日本の伝統文化である盆栽と最新テクノロジーを掛け合わせ、盆栽の魅力を拡張し「より多くの人が、より身近に、より盆栽を楽しむ」ための開発を九大生をはじめとしたグループで行なっています。
@@ -83,6 +83,42 @@ export default function Products() {
                 {
                     name: 'IPA未踏アドバンストプロジェクト概要',
                     url: 'https://www.ipa.go.jp/jinzai/mitou/advanced/2024/gaiyou-ur-1.html',
+                },
+            ],
+        },
+        {
+            image: '/images/communicare.png',
+            name: 'CommuniCare ~地域福祉活動に楽しく参加するシステム~',
+            state: '福岡未踏',
+            description: `
+                経済産業省「AKATSUKIプロジェクト」IT人材育成事業の第3期Solove採択者として、「地域福祉活動に楽しく参加するシステム」の構築を目指し、3か月間で開発したアプリです。
+                ユーザー情報から趣味や性格の似たユーザ同士でマッチングを行うことで、ボランティアの場を出会いの場へと変化させ、地域福祉活動への参加を促進します。
+            `,
+            skills: [
+                {
+                    name: 'nextjs',
+                },
+                {
+                    name: 'typescript',
+                },
+                {
+                    name: 'tailwindcss',
+                },
+                {
+                    name: 'python',
+                },
+                {
+                    name: 'firebase',
+                }
+            ],
+            links: [
+                {
+                    name: 'CommuniCare',
+                    url: 'https://github.com/taiseee/CommuniCare',
+                },
+                {
+                    name: '福岡未踏',
+                    url: 'https://mitou-fukuoka.org/',
                 },
             ],
         },

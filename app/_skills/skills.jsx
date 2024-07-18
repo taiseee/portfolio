@@ -12,9 +12,9 @@ export default function Skils() {
                     svg: 'https://skillicons.dev/icons?i=fastapi&theme=light',
                 },
                 {
-                    name: 'Selenium',
-                    svg: 'https://skillicons.dev/icons?i=selenium&theme=light',
-                },
+                    name: 'PyTorch',
+                    svg: 'https://skillicons.dev/icons?i=pytorch&theme=light',
+                }
             ],
         },
         {
@@ -27,14 +27,20 @@ export default function Skils() {
                     svg: 'https://skillicons.dev/icons?i=react&theme=light',
                 },
                 {
-                    name: 'Next.js',
-                    svg: 'https://skillicons.dev/icons?i=nextjs&theme=light',
-                },
-                {
                     name: 'Node.js',
                     svg: 'https://skillicons.dev/icons?i=nodejs&theme=light',
                 },
             ],
+        },
+        {
+            name: 'Next.js',
+            svg: 'nextjs',
+            product: false,
+        },
+        {
+            name: 'Go',
+            svg: 'go',
+            product: false,
         },
         {
             name: 'Firebase',
@@ -95,16 +101,6 @@ export default function Skils() {
             ],
         },
         {
-            name: 'HTML',
-            svg: 'html',
-            product: false,
-        },
-        {
-            name: 'CSS',
-            svg: 'css',
-            product: false,
-        },
-        {
             name: 'TailwindCSS',
             svg: 'tailwindcss',
             product: false,
@@ -162,9 +158,9 @@ export default function Skils() {
             <h1 className='pt-4 text-xl font-bold'>Interests</h1>
             <div className='pt-2'>
                 <Image
-                    src='https://skillicons.dev/icons?i=go,supabase,anaconda,pytorch&theme=light'
+                    src='https://skillicons.dev/icons?i=supabase&theme=light'
                     className='rounded-none'
-                    alt='go,supabase,anaconda,pytorch'
+                    alt='supabase'
                 />
             </div>
         </div>
