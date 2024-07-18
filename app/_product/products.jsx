@@ -112,6 +112,16 @@ export default function Products() {
                     name: 'tailwindcss',
                 },
                 {
+                    name: 'openai',
+                    image: (
+                        <Image
+                            src='svgs/skills/openai.svg'
+                            className='rounded-lg h-12 p-1 bg-stone-100'
+                            alt='openai'
+                        />
+                    ),
+                },
+                {
                     name: 'python',
                 },
                 {
