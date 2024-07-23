@@ -4,6 +4,45 @@ import { Divider, Image, Link, image } from '@nextui-org/react'
 export default function Products() {
     const products = [
         {
+            image: '/images/qpos.png',
+            name: 'q-pos ~学祭特化POSステム~',
+            state: 'サークル開発',
+            description: `
+                サークルでの学祭出店に向け、学祭特化のPOSシステムを作成しました。
+                サークルのハッカソンメンターとして参加していましたが、急遽メンターチームを作成し開発することになりました。
+                短い期間で、メンバーも研究やインターンでそこまで時間を取れませんでしたが、Notionを利用したタスク管理や、CI/CDの導入により効率的に開発を行いました。
+                また、DDDを意識しユーザーに寄り添った開発、Go、Typescriptを利用した型安全な開発を行いました。
+                今後も11月の学祭に向けてモバイルオーダーや、前売り券の機能など開発を進めていきます。
+                `,
+            skills: [
+                {
+                    name: 'nextjs',
+                },
+                {
+                    name: 'typescript',
+                },
+                {
+                    name: 'go',
+                },
+                {
+                    name: 'gin',
+                    image: (
+                        <Image
+                            src='images/skills/gin.png'
+                            className='rounded-lg h-12 p-1 bg-stone-100'
+                            alt='gin'
+                        />
+                    ),
+                },
+                {
+                    name: 'docker'
+                },
+                {
+                    name: 'aws',
+                }
+            ],
+        },
+        {
             image: '/images/warikanbot-line.JPG',
             name: 'LINE Bot「割り勘会計士　愛衣」',
             state: '個人開発',
