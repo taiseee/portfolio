@@ -261,7 +261,6 @@ export default function Products() {
                                 className='rounded-none'
                                 src={product.image}
                                 width={300}
-                                height={600}
                             />
                         </div>
                         <div className='basis-2/3 ml-6'>
